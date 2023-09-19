@@ -1,0 +1,20 @@
+.SortableTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .SortableTable th,
+  .SortableTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .SortableTable th {
+    background-color: chocolate;
+    color: white;
+  }
+  
+  .pagination {
+    margin-top: 1rem;
+  }
+  
