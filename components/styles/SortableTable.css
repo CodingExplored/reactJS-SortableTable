@@ -18,6 +18,7 @@
 .SortableTable th {
   background-color: #ff5500; /* Primary color */
   color: #fff;
+  cursor: pointer;
 }
 
 /* Style table rows with alternating background colors */
