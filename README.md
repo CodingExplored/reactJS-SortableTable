@@ -6,7 +6,7 @@
 
 ### Overview
 
-The `SortableTable` component is a feature-rich table for React applications that includes sorting and pagination functionalities.
+The `SortableTable` component is a table for React applications that includes sorting and pagination functionalities.
 
 ### Features
 
