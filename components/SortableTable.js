@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './styles/SortableTable.css';
 
-const SortableTable = ({ data, columns }) => {
+const SortableTable = ({ data, columns, rowsPerPage, style }) => {
   // State to keep track of the current sort direction and column
   const [sortConfig, setSortConfig] = useState(null);
 
   // State for pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = rowsPerPage || 10;
 
   // Sorting function
   const sortedData = React.useMemo(() => {
@@ -46,7 +46,7 @@ const SortableTable = ({ data, columns }) => {
   const currentItems = sortedData.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <div>
+    <div style={style}>
       <table className="SortableTable">
         <thead>
           <tr>

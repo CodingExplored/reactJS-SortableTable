@@ -1,14 +1,14 @@
 # reactJS-SortableTable
-React JS: A Table component with sorting and pagination included
 
+**React JS:** A Table component with sorting and pagination included.
 
-# SortableTable React Component
+## SortableTable React Component
 
-## Overview
+### Overview
 
 The `SortableTable` component is a feature-rich table for React applications that includes sorting and pagination functionalities.
 
-## Features
+### Features
 
 - **Sorting**: Click on the column headers to sort the table by that column.
 - **Pagination**: Navigate through pages with the pagination buttons below the table.
@@ -41,7 +41,7 @@ const columns = [
 function App() {
   return (
     <div>
-      <SortableTable data={data} columns={columns} />
+      <SortableTable data={data} columns={columns} rowsPerPage={10} />
     </div>
   );
 }
@@ -49,8 +49,11 @@ function App() {
 
 ## Props
 
+The `SortableTable` component supports the following props:
+
 - `data` (Array): An array of objects where each object represents a row in the table.
 - `columns` (Array): An array of objects where each object contains the `key` and `name` of a column.
+- `rowsPerPage` (Number, optional): The number of rows to display per page. Defaults to 10.
 
 ## License
 
